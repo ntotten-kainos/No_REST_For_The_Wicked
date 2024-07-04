@@ -2,7 +2,7 @@ package org.example.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class client {
+public class Client {
     @JsonProperty
     private int clientId;
     @JsonProperty
@@ -12,7 +12,7 @@ public class client {
     @JsonProperty
     private String clientPhoneNumber;
 
-    public client(final int clientId, final String clientName,
+    public Client(final int clientId, final String clientName,
                   final String clientAddress,
                   final String clientPhoneNumber) {
         this.clientId = clientId;
