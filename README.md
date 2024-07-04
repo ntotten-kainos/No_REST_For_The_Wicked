@@ -61,5 +61,5 @@ Health Check
 To see your applications health enter url `http://localhost:8081/healthcheck`
 
 
-Team 3 
+Team Trois
 No REST For The Wicked
