@@ -1,6 +1,6 @@
 package org.example.daos;
 
-import org.example.models.client;
+
 import org.example.requests.ClientRequest;
 
 import java.sql.Connection;
@@ -8,12 +8,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class ClientDao {
-    public int createClient(ClientRequest ClientRequest) throws SQLException {
-        try(Connection connection = DatabaseConnector.getConnection()) {
+    public int createClient(final ClientRequest ClientRequest) throws SQLException {
+        try (Connection connection = DatabaseConnector.getConnection()) {
 
             String insertStatement = "INSERT INTO `Client`(clientName, clientAddress, clientPhoneNumber)" +
                     "VALUES (?, ?, ?);";

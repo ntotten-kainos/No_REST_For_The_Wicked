@@ -12,8 +12,8 @@ public class client {
     @JsonProperty
     private String clientPhoneNumber;
 
-    public client(int clientId, String clientName, String clientAddress,
-                  String clientPhoneNumber) {
+    public client(final int clientId, final String clientName, final String clientAddress,
+                  final String clientPhoneNumber) {
         this.clientId = clientId;
         this.clientName = clientName;
         this.clientAddress = clientAddress;
@@ -25,7 +25,7 @@ public class client {
         return clientId;
     }
 
-    public void setClientId(int clientId) {
+    public void setClientId(final int clientId) {
         this.clientId = clientId;
     }
 
@@ -33,7 +33,7 @@ public class client {
         return clientName;
     }
 
-    public void setClientName(String clientName) {
+    public void setClientName(final String clientName) {
         this.clientName = clientName;
     }
 
@@ -41,7 +41,7 @@ public class client {
         return clientAddress;
     }
 
-    public void setClientAddress(String clientAddress) {
+    public void setClientAddress(final String clientAddress) {
         this.clientAddress = clientAddress;
     }
 
@@ -49,7 +49,7 @@ public class client {
         return clientPhoneNumber;
     }
 
-    public void setClientPhoneNumber(String clientPhoneNumber) {
+    public void setClientPhoneNumber(final String clientPhoneNumber) {
         this.clientPhoneNumber = clientPhoneNumber;
     }
 }

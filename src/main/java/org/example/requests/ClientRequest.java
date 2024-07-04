@@ -12,7 +12,7 @@ public class ClientRequest {
         return clientAddress;
     }
 
-    public void setClientAddress(String clientAddress) {
+    public void setClientAddress(final String clientAddress) {
         this.clientAddress = clientAddress;
     }
 
@@ -20,7 +20,7 @@ public class ClientRequest {
         return clientPhoneNumber;
     }
 
-    public void setClientPhoneNumber(String clientPhoneNumber) {
+    public void setClientPhoneNumber(final String clientPhoneNumber) {
         this.clientPhoneNumber = clientPhoneNumber;
     }
 
@@ -28,15 +28,15 @@ public class ClientRequest {
         return clientName;
     }
 
-    public void setClientName(String clientName) {
+    public void setClientName(final String clientName) {
         this.clientName = clientName;
     }
 
     @JsonCreator
     public ClientRequest(
-            @JsonProperty ("clientName") String clientName,
-            @JsonProperty ("clientAddress") String clientAddress,
-            @JsonProperty ("clientPhoneNumber") String clientPhoneNumber) {
+            @JsonProperty ("clientName") final String clientName,
+            @JsonProperty ("clientAddress") final String clientAddress,
+            @JsonProperty ("clientPhoneNumber") final String clientPhoneNumber) {
         this.clientName = clientName;
         this.clientAddress = clientAddress;
         this.clientPhoneNumber = clientPhoneNumber;

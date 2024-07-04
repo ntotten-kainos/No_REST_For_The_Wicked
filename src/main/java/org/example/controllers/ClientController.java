@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 @Api("Engineering Academy - Group Challenge 2 - Team 3 - Client API")
 @Path("/api/client")
-public class ClientController {
+public final class ClientController {
     ClientService clientService;
 
     public ClientController(ClientService clientService) {
