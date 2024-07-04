@@ -36,7 +36,8 @@ public class ClientRequest {
     public ClientRequest(
             @JsonProperty ("clientName") final String clientName,
             @JsonProperty ("clientAddress") final String clientAddress,
-            @JsonProperty ("clientPhoneNumber") final String clientPhoneNumber) {
+            @JsonProperty ("clientPhoneNumber")
+            final String clientPhoneNumber) {
         this.clientName = clientName;
         this.clientAddress = clientAddress;
         this.clientPhoneNumber = clientPhoneNumber;

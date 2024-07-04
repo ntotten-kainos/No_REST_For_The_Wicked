@@ -11,14 +11,16 @@ import java.sql.Statement;
 
 
 public class ClientDao {
-    public int createClient(final ClientRequest ClientRequest) throws SQLException {
+    public int createClient(final ClientRequest ClientRequest)
+            throws SQLException {
         try (Connection connection = DatabaseConnector.getConnection()) {
 
-            String insertStatement = "INSERT INTO `Client`(clientName, clientAddress, clientPhoneNumber)" +
-                    "VALUES (?, ?, ?);";
+            String insertStatement = "INSERT INTO `Client`(clientName, clientAddress, clientPhoneNumber)"
+                    + "VALUES (?, ?, ?);";
 
             assert connection != null;
-            PreparedStatement statement = connection.prepareStatement(insertStatement, Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement statement = connection.prepareStatement(
+                    insertStatement, Statement.RETURN_GENERATED_KEYS);
 
             statement.setString(1, ClientRequest.getClientName());
             statement.setString(2, ClientRequest.getClientAddress());

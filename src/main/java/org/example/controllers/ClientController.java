@@ -18,13 +18,13 @@ import java.sql.SQLException;
 public final class ClientController {
     ClientService clientService;
 
-    public ClientController(ClientService clientService) {
+    public ClientController(final ClientService clientService) {
         this.clientService = clientService;
     }
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public Response createClient(ClientRequest clientRequest) {
+    public Response createClient(final ClientRequest clientRequest) {
         try {
             return Response
                     .status(Response.Status.CREATED)

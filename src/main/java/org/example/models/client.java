@@ -12,7 +12,8 @@ public class client {
     @JsonProperty
     private String clientPhoneNumber;
 
-    public client(final int clientId, final String clientName, final String clientAddress,
+    public client(final int clientId, final String clientName,
+                  final String clientAddress,
                   final String clientPhoneNumber) {
         this.clientId = clientId;
         this.clientName = clientName;
