@@ -16,8 +16,8 @@ public class ClientDao {
         try (Connection connection = DatabaseConnector.getConnection()) {
 
             String insertStatement =
-                    "INSERT INTO `Client`(clientName, " +
-                            "clientAddress, clientPhoneNumber)"
+                    "INSERT INTO `Client`(clientName, "
+                            + "clientAddress, clientPhoneNumber)"
                     + "VALUES (?, ?, ?);";
 
             assert connection != null;
