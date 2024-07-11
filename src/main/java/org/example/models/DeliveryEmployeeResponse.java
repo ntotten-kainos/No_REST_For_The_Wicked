@@ -2,17 +2,17 @@ package org.example.models;
 
 public class DeliveryEmployeeResponse {
     private String name;
-    private String nationalInsurance;
+    private String NINO;
     private int bankAccountNo;
     private double salary;
 
     public DeliveryEmployeeResponse(
             final String name,
-            final String nationalInsurance,
+            final String NINO,
             final int bankAccountNo,
             final double salary) {
         this.name = name;
-        this.nationalInsurance = nationalInsurance;
+        this.NINO = NINO;
         this.bankAccountNo = bankAccountNo;
         this.salary = salary;
     }
@@ -25,12 +25,12 @@ public class DeliveryEmployeeResponse {
         this.name = name;
     }
 
-    public String getNationalInsurance() {
-        return nationalInsurance;
+    public String getNINO() {
+        return NINO;
     }
 
-    public void setNationalInsurance(String nationalInsurance) {
-        this.nationalInsurance = nationalInsurance;
+    public void setNINO(String NINO) {
+        this.NINO = NINO;
     }
 
     public int getBankAccountNo() {
