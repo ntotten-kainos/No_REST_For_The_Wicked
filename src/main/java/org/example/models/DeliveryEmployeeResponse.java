@@ -1,52 +1,51 @@
 package org.example.models;
 
 public class DeliveryEmployeeResponse {
-    private String employeeName;
-    private double employeeSalary;
-    private String employeeBankAccountNumber;
-    private String employeeNationalInsuranceNumber;
+    private String name;
+    private String nationalInsurance;
+    private int bankAccountNo;
+    private double salary;
 
     public DeliveryEmployeeResponse(
-            final String employeeName,
-            final double employeeSalary,
-            final String employeeBankAccountNumber,
-            final String employeeNationalInsuranceNumber) {
-        this.employeeName = employeeName;
-        this.employeeSalary = employeeSalary;
-        this.employeeBankAccountNumber = employeeBankAccountNumber;
-        this.employeeNationalInsuranceNumber = employeeNationalInsuranceNumber;
+            final String name,
+            final String nationalInsurance,
+            final int bankAccountNo,
+            final double salary) {
+        this.name = name;
+        this.nationalInsurance = nationalInsurance;
+        this.bankAccountNo = bankAccountNo;
+        this.salary = salary;
     }
 
-    public String getEmployeeName() {
-        return employeeName;
+    public String getName() {
+        return name;
     }
 
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public double getEmployeeSalary() {
-        return employeeSalary;
+    public String getNationalInsurance() {
+        return nationalInsurance;
     }
 
-    public void setEmployeeSalary(double employeeSalary) {
-        this.employeeSalary = employeeSalary;
+    public void setNationalInsurance(String nationalInsurance) {
+        this.nationalInsurance = nationalInsurance;
     }
 
-    public String getEmployeeBankAccountNumber() {
-        return employeeBankAccountNumber;
+    public int getBankAccountNo() {
+        return bankAccountNo;
     }
 
-    public void setEmployeeBankAccountNumber(String employeeBankAccountNumber) {
-        this.employeeBankAccountNumber = employeeBankAccountNumber;
+    public void setBankAccountNo(int bankAccountNo) {
+        this.bankAccountNo = bankAccountNo;
     }
 
-    public String getEmployeeNationalInsuranceNumber() {
-        return employeeNationalInsuranceNumber;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setEmployeeNationalInsuranceNumber(
-            String employeeNationalInsuranceNumber) {
-        this.employeeNationalInsuranceNumber = employeeNationalInsuranceNumber;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 }

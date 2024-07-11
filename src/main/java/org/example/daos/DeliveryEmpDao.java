@@ -57,9 +57,9 @@ public class DeliveryEmpDao {
             while(resultSet.next()) {
                 DeliveryEmployeeResponse deliveryEmployeeResponse = new DeliveryEmployeeResponse(
                         resultSet.getString("Name"),
-                        resultSet.getInt("BankAcctNum"),
                         resultSet.getString("NINO"),
-                        resultSet.getString("Salary")
+                        resultSet.getInt("BankAcctNum"),
+                        resultSet.getDouble("Salary")
                         );
                 deliveryEmployees.add(deliveryEmployeeResponse);
             }
