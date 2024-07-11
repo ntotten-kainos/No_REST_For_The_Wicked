@@ -12,9 +12,9 @@ public class DeliveryEmpRequest {
     @JsonCreator
     public DeliveryEmpRequest(
             @JsonProperty("Name") final String name,
-            @JsonProperty("NationalInsuranceNumber")
+            @JsonProperty("NINO")
             final String nationalInsurance,
-            @JsonProperty("BankAccountNumber") final int bankAccountNo,
+            @JsonProperty("BankAcctNum") final int bankAccountNo,
             @JsonProperty("Salary") final double salary) {
         this.name = name;
         this.nationalInsurance = nationalInsurance;
