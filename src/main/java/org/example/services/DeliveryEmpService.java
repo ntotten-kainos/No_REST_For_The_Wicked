@@ -5,8 +5,10 @@ import org.example.daos.DeliveryEmpDao;
 import org.example.exceptions.Entity;
 import org.example.exceptions.FailedToCreateException;
 import org.example.models.DeliveryEmpRequest;
+import org.example.models.DeliveryEmployeeResponse;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class DeliveryEmpService {
     DeliveryEmpDao deliveryEmpDao;
@@ -23,5 +25,9 @@ public class DeliveryEmpService {
             throw new FailedToCreateException(Entity.DELIVERY_EMPLOYEE);
         }
         return id;
+    }
+
+    public List<DeliveryEmployeeResponse> getAllDeliveryEmployees() throws SQLException {
+        return deliveryEmpDao.getAllDeliveryEmployees();
     }
 }
